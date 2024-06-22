@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <style>
+        /* Background Image */
+        body {
+            background-image: url("assets/images/book.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        /* Container Styles */
+        h1 {
+            text-align: center;
+            padding: 20px;
+            color: red; /* Text color on the background */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for readability */
+        }
+
+        /* Table Styles */
+        table {
+            margin: 20px auto;
+            background-color: rgba(255, 255, 255, 0.9); /* Background color for tables with transparency */
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Box shadow for tables */
+            border-radius: 10px; /* Rounded corners for tables */
+            width: 80%; /* Adjust table width as needed */
+        }
+
+        th, td {
+            padding: 10px 20px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2; /* Alternate row color for readability */
+        }
+
+        /* Heading Styles */
+        h2 {
+            background-color: rgba(255, 255, 255, 0.9); /* Background color for h2 */
+            padding: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Box shadow for h2 */
+            border-radius: 10px; /* Rounded corners for h2 */
+            text-align: center;
+        }
+
+        /* CSS for button links */
+        .button-link {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            text-align: center;
+            text-decoration: none;
+            border: none;
+            background-color: #00ff00; /* Button background color */
+            color: #fff; /* Button text color */
+            border-radius: 5px; /* Rounded corners */
+            transition: box-shadow 0.3s ease; /* Smooth transition for box-shadow */
+        }
+
+        /* Apply green box shadow on hover */
+        .button-link:hover {
+            box-shadow: 0 0 10px rgba(0, 255, 0, 0.7); /* Green box shadow on hover */
+        }
+
+        /* Styles for Back to Home button */
+        .back-to-home {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            padding: 10px 20px;
+            background-color: #ff0000; /* Button background color */
+            color: #fff; /* Button text color */
+            text-decoration: none;
+            border-radius: 5px; /* Rounded corners */
+            transition: box-shadow 0.3s ease; /* Smooth transition for box-shadow */
+        }
+
+        /* Apply red box shadow on hover for Back to Home button */
+        .back-to-home:hover {
+            box-shadow: 0 0 10px rgba(255, 0, 0, 0.7); /* Red box shadow on hover */
+        }
+    </style>
+</head>
+<body>
+    <h1>Admin Dashboard</h1>
+    
+    <!-- Back to Home button -->
+    <a href="index.html" class="back-to-home">Back to Home</a>
+    
+    <!-- Display Voter Details -->
+    <h2>Voter Details</h2>
+  
+    <!-- Add a link to display voter details -->
+    <a href="voterdisplay.jsp" class="button-link">View Voter Details</a>
+
+    <!-- Display Candidate Details -->
+    <h2>Candidate Details</h2>
+    
+    <!-- Add a link to display candidate details -->
+    <a href="candisplay.jsp" class="button-link">View Candidate Details</a>
+</body>
+</html>

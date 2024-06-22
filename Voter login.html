@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voter Login</title>
+    <style>
+        /* Add your CSS styles here for Admin form styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #607d8b; /* Blue-grey background color */
+            background-image: linear-gradient(to right, #607d8b, #cfd8dc);
+        }
+
+        .container {
+            width: 300px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: transparent; /* Transparent background color */
+        }
+
+        h2 {
+            text-align: center;
+            color: #f44336; /* Red color for the heading */
+            font-size: 40px;
+            /* Add shadow effect */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="number"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #333;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: transform 0.2s; /* Add transition for the press effect */
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+
+        /* Add a pressed effect */
+        button:active {
+            background-color: #222;
+            transform: translateY(2px); /* Shift the button down slightly when pressed */
+        }
+    </style>
+
+    <style>
+        /* Add your CSS styles here for Voter form styling */
+        body.voter {
+            font-family: Arial, sans-serif;
+            margin: 100px ;
+            padding: 0;
+        }
+
+        .container.voter {
+            width: 300px;
+            margin: 0 auto;
+            padding: 40px;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2.voter {
+            text-align: center;
+        }
+
+        label.voter {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"].voter,
+        input[type="password"].voter {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button.voter {
+            background-color: #333;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button.voter:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body class="voter">
+    <div class="container voter">
+        <h2 class="voter">Voter Login</h2>
+        <form action="votebutton.jsp" method="POST">
+            <label for="voterid" class="voter">voterid:</label>
+            <input type="text" id="voterid" name="voterid" class="voter" required>
+
+            <label for="password" class="voter">Password:</label>
+            <input type="password" id="password" name="password" class="voter" required>
+
+            <button type="submit" class="voter">Login</button>
+        </form>
+    </div>
+</body>
+</html>
